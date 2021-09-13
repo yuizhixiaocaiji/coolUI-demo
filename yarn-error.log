@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Administrator.DESKTOP-L9KIF67\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  D:\cmder\vendor\git-for-windows\mingw64\bin;D:\cmder\vendor\git-for-windows\usr\bin;C:\Users\Administrator.DESKTOP-L9KIF67\bin;D:\虚拟机\bin;%S;stemRoot%\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\MATLAB\runtime\win64;D:\MATLAB\bin;D:\MATLAB\polyspace\bin;D:\Altium.Designer.Winter.09.SP3.Build8.3.0.16776.Cracked\System;D:\mysql\mysql-8.0.25-winx64\bin;C:\Windows\system32;C:\Windows;C:\Program Files\nodejs;C:\Users\Administrator.DESKTOP-L9KIF67\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator.DESKTOP-L9KIF67\AppData\Local\Yarn\bin;C:\Program Files\nodejs;C:\Program Files\JetBrains\WebStorm 2021.2\bin;C:\Users\Administrator.DESKTOP-L9KIF67\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.6
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Users\Administrator.DESKTOP-L9KIF67\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:137023:13)
+      at Interface.emit (events.js:400:28)
+      at Interface._ttyWrite (readline.js:910:16)
+      at ReadStream.onkeypress (readline.js:235:10)
+      at ReadStream.emit (events.js:400:28)
+      at emitKeys (internal/readline/utils.js:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1179:36)
+      at ReadStream.emit (events.js:400:28)
+      at addChunk (internal/streams/readable.js:290:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

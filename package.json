@@ -21,6 +21,12 @@
   },
   "homepage": "https://github.com/yuizhixiaocaiji/coolUI-demo#readme",
   "dependencies": {
+    "parcel": "1.9.2",
     "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.2",
+    "parcel-bundler": "1.9.2",
+    "vue-template-compiler": "^2.6.14"
   }
 }

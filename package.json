@@ -1,32 +1,35 @@
 {
-  "name": "gulu",
-  "version": "0.0.1",
-  "description": "这是一个UI框架",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yuizhixiaocaiji/coolUI-demo.git"
-  },
-  "keywords": [
-    "vue",
-    "ui"
-  ],
-  "author": "XuCheng",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yuizhixiaocaiji/coolUI-demo/issues"
-  },
-  "homepage": "https://github.com/yuizhixiaocaiji/coolUI-demo#readme",
-  "dependencies": {
-    "parcel": "1.9.2",
-    "vue": "^2.6.14"
-  },
-  "devDependencies": {
-    "@vue/component-compiler-utils": "^3.2.2",
-    "parcel-bundler": "1.9.2",
-    "vue-template-compiler": "^2.6.14"
-  }
+    "name": "gulu",
+    "version": "0.0.1",
+    "description": "这是一个UI框架",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yuizhixiaocaiji/coolUI-demo.git"
+    },
+    "keywords": [
+        "vue",
+        "ui"
+    ],
+    "author": "XuCheng",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yuizhixiaocaiji/coolUI-demo/issues"
+    },
+    "homepage": "https://github.com/yuizhixiaocaiji/coolUI-demo#readme",
+    "alias": { "vue": "./node_modules/vue/dist/vue.common.js" },
+    "dependencies": {
+        "parcel": "1.9.2",
+        "vue": "^2.6.14",
+        "vue-hot-reload-api": "^2.3.4"
+    },
+    "devDependencies": {
+        "@vue/component-compiler-utils": "^3.2.2",
+        "node-sass": "^6.0.1",
+        "parcel-bundler": "1.9.2",
+        "vue-template-compiler": "^2.6.14"
+    }
 }

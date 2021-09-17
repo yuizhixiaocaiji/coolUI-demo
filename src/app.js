@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import Button from './button.vue'
-import Icon from './icon.vue'
-import ButtonGroup from './button-group.vue'
-import Input from './input.vue'
+import Button from './button'
+import Icon from './icon'
+import ButtonGroup from './button-group'
+import Input from './input'
 
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
@@ -14,11 +14,14 @@ new Vue({
   data: {
     loading1: false,
     loading2: true,
-    loading3: false
+    loading3: false,
+    message: 'hi'
+  },
+  created() {
   },
   methods: {
     inputChange(e) {
-      console.log(e.target.value)
+      console.log(e)
     }
   }
 })

@@ -1,4 +1,4 @@
-# coolUI - Vue UI 框架
+# greatUI - Vue UI 框架
 
 [![Build Status](https://app.travis-ci.com/yuizhixiaocaiji/coolUI-demo.svg?branch=master)](https://app.travis-ci.com/yuizhixiaocaiji/coolUI-demo)
 
@@ -30,13 +30,13 @@
     ```
    IE 15 及以上浏览器都支持此样式。
 
-2. 安装 coolUI
+2. 安装 greatUI
 
    ```
    npm i --save xucheng-test-1-1
    ```
 
-3. 引入 coolUI
+3. 引入 greatUI
    ```
    import { Button, ButtonGroup, Icon } from 'xucheng-test-1-1'
    import 'xucheng-test-1-1/dist/index.css'

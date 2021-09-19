@@ -12,24 +12,23 @@
     </div >
   </div >
 </template >
-<script >
+<script>
+//构造组件的选项
 export default {
   name: 'GuluToast',
   props: {
     autoClose: {
-      type: Boolean,
-      default: true
-    },
-    autoCloseDelay: {
-      type: Number,
-      default: 3
+      type: [Boolean, Number],
+      default: 5,
+      validator (value) {
+        return value === false || typeof value === 'number';
+      }
     },
     closeButton: {
       type: Object,
-      default() {
+      default () {
         return {
-          text: '关闭',
-          callback: undefined
+          text: '关闭', callback: undefined
         }
       }
     },
@@ -40,48 +39,50 @@ export default {
     position: {
       type: String,
       default: 'top',
-      validator(value) {
-        return [ 'top', 'bottom', 'middle' ].indexOf(value) >= 0
+      validator (value) {
+        return ['top', 'bottom', 'middle'].indexOf(value) >= 0
       }
     }
   },
-  mounted() {
+  mounted () {
     this.updateStyles()
     this.execAutoClose()
   },
   computed: {
-    toastClasses() {
-      return { [`position-${this.position}`]: true }
+    toastClasses () {
+      return {
+        [`position-${this.position}`]: true
+      }
     }
   },
   methods: {
-    updateStyles() {
+    updateStyles () {
       this.$nextTick(() => {
         this.$refs.line.style.height =
             `${this.$refs.toast.getBoundingClientRect().height}px`
       })
     },
-    execAutoClose() {
+    execAutoClose () {
       if (this.autoClose) {
         setTimeout(() => {
           this.close()
-        }, this.autoCloseDelay * 1000)
+        }, this.autoClose * 1000)
       }
     },
-    close() {
+    close () {
       this.$el.remove()
       this.$emit('close')
       this.$destroy()
     },
-    onClickClose() {
+    onClickClose () {
       this.close()
       if (this.closeButton && typeof this.closeButton.callback === 'function') {
-        this.closeButton.callback(this)
+        this.closeButton.callback(this)//this === toast实例
       }
     }
   }
 }
-</script >
+</script>
 <style lang="scss" scoped >
 $font-size: 14px;
 $toast-min-height: 40px;

@@ -38,11 +38,12 @@
 <div id="app" >
   <div style="overflow: hidden; padding: 100px ;" >
     <g-popover position="bottom" >
-      <template slot="content" >
+      <template slot="content" slot-scope="{close}" >
         <div >asdasdasdasdasdasdasdasdasdasdasdaaaasdsadasdasdasdsdasdasdasdasdasdasdasdasdasdsdasdasdasdassdasdasd
         </div >
         <div >asdasdasdasdasdasdasdasdasdasdasdaaaasdsadasdasdasdsdasdasdasdasdasdasdasdasdasdsdasdasdasdassdasdasd
         </div >
+        <g-button @click="close" >关闭</g-button >
       </template >
       <g-button >点我</g-button >
     </g-popover >

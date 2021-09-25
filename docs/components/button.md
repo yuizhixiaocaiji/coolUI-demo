@@ -8,7 +8,7 @@ title: Button-按钮
 
 &nbsp;
 <ClientOnly>
-<button-demos></button-demos>
+<button-demo></button-demo>
 </ClientOnly>
 
 ## 使用方法
@@ -38,4 +38,21 @@ title: Button-按钮
 
 通过设置<span style='color:#3eaf7c;background-color:#F8F8F8'> disabled </span>属性，可将按钮设置为不可用状态。
 
+### 按钮组
+
+预览
+<ClientOnly>
+<button-group-demo></button-group-demo>
+</ClientOnly>
+
+代码
+
+```vue
+
+<g-button-group >
+<g-button >默认按钮</g-button >
+<g-button >默认按钮</g-button >
+<g-button >默认按钮</g-button >
+</g-button-group >
+```
 

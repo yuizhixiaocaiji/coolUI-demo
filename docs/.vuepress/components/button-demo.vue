@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Button from '../../../src/Button'
+import Button from '../../../src/button.vue'
 export default {
   components: {
     'g-button': Button,

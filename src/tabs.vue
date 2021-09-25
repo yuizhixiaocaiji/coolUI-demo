@@ -1,12 +1,13 @@
 <template>
-  <div class="tabs">
+  <div class="tabs-wrapper">
     <slot></slot>
   </div>
 </template>
+
 <script>
 import Vue from 'vue'
 export default {
-  name: 'GuluTabs',
+  name: 'InitTabs',
   props: {
     selected: {
       type: String,
@@ -15,20 +16,16 @@ export default {
     direction: {
       type: String,
       default: 'horizontal',
-      validator (value) {
+      validator(value) {
         return ['horizontal', 'vertical'].indexOf(value) >= 0
       }
     }
   },
-  data () {
-    return {
-      eventBus: new Vue()
-    }
+  data() {
+    return {eventBus: new Vue()}
   },
-  provide () {
-    return {
-      eventBus: this.eventBus
-    }
+  provide() {
+    return {eventBus: this.eventBus}
   },
   methods: {
     checkChildren() {
@@ -37,11 +34,11 @@ export default {
         console.warn('tabs的子组件应该是tabs-head和tabs-body')
       }
     },
-    selectTab() {
+    selectTab () {
       this.$children.forEach((vm) => {
-        if (vm.$options.name === 'GuluTabsHead') {
+        if (vm.$options.name === 'InitTabsHead') {
           vm.$children.forEach((childVm) => {
-            if (childVm.$options.name === 'GuluTabsItem'
+            if (childVm.$options.name === 'InitTabsItem'
                 && childVm.name === this.selected) {
               this.eventBus.$emit('update:selected', this.selected, childVm)
             }
@@ -50,13 +47,14 @@ export default {
       })
     }
   },
-  mounted () {
-    this.checkChildren()
-    this.selectTab()
+  mounted() {
+    this.checkChildren();
+    this.selectTab();
   }
 }
 </script>
-<style>
-.tabs {
+
+<style lang="scss" scoped>
+.tabs-wrapper {
 }
 </style>

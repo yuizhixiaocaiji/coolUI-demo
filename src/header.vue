@@ -1,10 +1,14 @@
 <template>
-  <div class="header">
-    <slot></slot>
+  <div class="header-wrapper">
+    <slot />
   </div>
 </template>
-<style lang="scss" scoped>
-.header{
 
+<script>
+export default {
+  name:'InitHeader'
 }
-</style >
+</script>
+
+<style lang="scss" scoped>
+</style>

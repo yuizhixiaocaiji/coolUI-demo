@@ -1,10 +1,14 @@
 <template>
-  <div class="footer">
-    <slot></slot>
+  <div class="footer-wrapper">
+    <slot />
   </div>
 </template>
-<style lang="scss" scoped>
-.footer{
 
+<script>
+export default {
+  name:'InitFooter'
 }
-</style >
+</script>
+
+<style lang="scss" scoped>
+</style>

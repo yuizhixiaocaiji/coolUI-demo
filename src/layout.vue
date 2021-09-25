@@ -1,11 +1,12 @@
-<template >
-  <div class="layout" :class="layoutClass" >
-    <slot ></slot >
-  </div >
-</template >
-<script >
+<template>
+  <div class="layout-wrapper" :class="layoutClass">
+    <slot/>
+  </div>
+</template>
+
+<script>
 export default {
-  name: 'GuluLayout',
+  name: 'InitLayout',
   data() {
     return {
       layoutClass: {
@@ -14,22 +15,22 @@ export default {
     }
   },
   mounted() {
-    this.$children.forEach((vm) => {
-      if (vm.$options.name === 'GuluSider') {
+    this.$children.forEach(vm => {
+      if (vm.$options.name === 'InitSider') {
         this.layoutClass.hasSider = true
       }
     })
   }
 }
-</script >
-<style lang="scss" scoped >
-.layout {
-  flex-grow: 1;
+</script>
+
+<style lang="scss" scoped>
+.layout-wrapper {
   display: flex;
   flex-direction: column;
-
-  &.hasSider {
+  flex-grow: 1;
+  &.hasSider{
     flex-direction: row;
   }
 }
-</style >
+</style>

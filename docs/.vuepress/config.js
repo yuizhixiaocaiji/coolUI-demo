@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/greatUI-demo/',
   title: 'greatUI',
   description: '一款简洁高效棒棒哒UI框架',
   themeConfig: {

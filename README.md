@@ -33,20 +33,38 @@
 2. 安装 greatUI
 
    ```
-   npm i --save xucheng-test-1-1
+   npm i --save great-ui
    ```
 
 3. 引入 greatUI
    ```
-   import { Button, ButtonGroup, Icon } from 'xucheng-test-1-1'
-   import 'xucheng-test-1-1/dist/index.css'
+   import { Button, ButtonGroup, Icon } from 'great-ui'
+   import 'great-ui/dist/index.css'
 
    export default {
    name: 'app',
    components: {
-    HelloWorld,
-    'g-button': Button,
-    'g-icon': Icon,
+   HelloWorld,
+   'g-button': Button,
+   'g-icon': Icon,
+   'g-button-group':ButtonGroup,
+   'g-col':Col,
+   'g-collapse':Collapse,
+   'g-collapse-item':CollapseItem,
+   'g-content': Content,
+   'g-footer': Footer,
+   'g-header': Header,
+   'g-input': Input,
+   'g-layout': Layout,
+   'g-popover': Popover,
+   'g-row': Row,
+   'g-sider': Sider,
+   'g-tabs': Tabs,
+   'g-tabs-head': TabsHead,
+   'g-tabs-body': TabsBody,
+   'g-tabs-item': TabsItem,
+   'g-tabs-pane': TabsPane,
+   'g-toast': Toast,`
     }
    }
    ```

@@ -19,3 +19,5 @@ npm install great-ui
 
 ```shell script
 # 最新稳定版
+yarn add great-ui
+```
